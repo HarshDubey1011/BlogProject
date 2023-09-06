@@ -6,7 +6,7 @@
 	<h2>Please Login:</h2>
 	<h3>(Must be the superuser, Please check with the site admin)</h3>
 	{% if form.errors %}
-		<p>Please check with the username and password</p>
+		<p>Please check the username and password</p>
 	{% endif %}
 	<form action="{% url 'login' %}" method="POST">
 		{% csrf_token %}
